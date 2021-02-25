@@ -8,7 +8,7 @@ isp = {')': -1, '*': 2, '/': 2, '+': 1, '-': 1, '(': 3}
 def get_postfix(cal_input):
     result = []
     for i in cal_input:
-        # .isdigit() 문자열인지 확인하는 함수
+        # .isdigit() 숫자인지 확인하는 함수, 문자열이더라도 숫자가 저장된 경우 true
         if i.isdigit():
             result.append(i)
         # ')'는 '('를 만나기 전까지 pop해서 출력
@@ -41,7 +41,7 @@ def get_postfix(cal_input):
 # step 2
 def get_calculation(postfix):
     for i in postfix:
-        # .isdigit() 문자열인지 확인하는 함수
+        # .isdigit() 숫자인지 확인하는 함수, 문자열이더라도 숫자가 저장된 경우 true
         if i.isdigit():
             stack.append(i)
         else:
