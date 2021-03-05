@@ -2,6 +2,9 @@ import sys
 sys.stdin = open('input.txt')
 
 def BFS(sv):
+    queue = []
+    travel = []
+    visited = [0] * (V + 1)
     visited[sv] = True
     queue.append(sv)
     while queue:
@@ -19,8 +22,6 @@ for t in range(1, int(input())+1):
     for _ in range(E):
         s, e = map(int, input().split())
         AL[s].append(e)
-    queue = []
-    travel = []
-    visited = [0] * (V + 1)
+        AL[e].append(s)
     ans = ' '.join(map(str, BFS(1)))
     print('#%d %s' % (t, ans))
