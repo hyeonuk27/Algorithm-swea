@@ -46,4 +46,3 @@ for t in range(10):
     postfix = get_postfix(cal_input)
     ans = calculation(postfix)
     print('#%d %d' % (t+1, ans))
-

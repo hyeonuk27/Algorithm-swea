@@ -33,8 +33,3 @@ for t in range(1, int(input())+1):
     print('#%d' % t)
     for i in range(n):
         print(''.join(arr_90[i]), ''.join(arr_180[i]), ''.join(arr_270[i]))
-
-
-
-
-

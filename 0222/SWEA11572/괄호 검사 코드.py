@@ -42,11 +42,3 @@ for tc in range(1, int(input())+1):
     if stack:
         ans = 0
     print('#%d %d' % (tc, ans))
-
-
-
-
-
-
-
-

@@ -16,5 +16,3 @@ for t in range(1, int(input())+1):
                 max_cnt = cnt[j]
 
     print( '#%d %d' % (t, max_cnt))
-
-

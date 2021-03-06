@@ -28,6 +28,3 @@ for t in range(1, 11):
     ans = 0 if DFS(V, AL, 1) == 0 else 1
 
     print('#%d %d' % (t, ans))
-
-
-

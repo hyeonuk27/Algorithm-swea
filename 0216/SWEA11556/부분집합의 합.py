@@ -18,8 +18,4 @@ for t in range(1, int(input()) + 1):
 
     ans_lst = [1 for i in lst if len(i) == n if sum(i) == k]
     ans = 0 if len(ans_lst) == 0 else 1
-
     print('#%d %d' % (t, ans))
-
-
-

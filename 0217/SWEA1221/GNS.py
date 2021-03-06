@@ -18,8 +18,5 @@ for t in range(1, int(input()) + 1):
     ans = ''
     for k in range(N):
         ans += (alien_num[k] + ' ') * cnt[k]
-
     print(tc)
     print(ans)
-
-

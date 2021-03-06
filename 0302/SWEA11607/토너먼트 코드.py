@@ -21,4 +21,3 @@ for t in range(1, int(input())+1):
     card = list(map(int, input().split()))
     ans = get_group(0, n - 1) + 1
     print('#%d %d' % (t, ans))
-

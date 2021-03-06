@@ -4,7 +4,6 @@ sys.stdin = open('input.txt')
 # 특정 행(level)에서 사용할 열을 선택함
 # level : 행 번호
 # s : 선택된 열에 있는 값의 합
-
 def DFS_sum(level, s):
     global min_sum
     # 가지치기
@@ -21,7 +20,6 @@ def DFS_sum(level, s):
             visited[i] = 1
             DFS_sum(level + 1, s + data[level][i])
             visited[i] = 0
-
 
 for t in range(1, int(input())+1):
     n = int(input())

@@ -39,10 +39,3 @@ for t in range(1, int(input())+1):
         else:
             ans = 'Impossible'
     print('#%d %s' % (t, ans))
-
-
-
-
-
-
-

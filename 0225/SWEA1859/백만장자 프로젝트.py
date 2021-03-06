@@ -15,4 +15,3 @@ for t in range(1, int(input())+1):
             profit += max_price - price[i]
 
     print('#%d %d' % (t, profit))
-

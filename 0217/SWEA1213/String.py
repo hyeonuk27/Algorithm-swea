@@ -7,7 +7,6 @@ for t in range(10):
     p, f = len(part), len(full)
 
     ans = 0
-    # 범위 : 0 ~ f - p
     for i in range(f - p + 1):
         cnt = 0
         for j in range(p):
@@ -19,4 +18,3 @@ for t in range(10):
             ans += 1
 
     print('#%d %d' % (tc, ans))
-

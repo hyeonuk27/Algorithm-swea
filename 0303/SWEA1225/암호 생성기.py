@@ -13,7 +13,6 @@ def get_pw(data):
         data[-1] = 0
     return data
 
-
 for t in range(1, 11):
     tc = int(input())
     data = list(map(int, input().split()))

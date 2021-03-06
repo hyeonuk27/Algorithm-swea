@@ -38,7 +38,3 @@ for t in range(1, 11):
         ans = get_max(sum_lst)
 
     print('#%d %d' % (t, ans))
-
-
-
-

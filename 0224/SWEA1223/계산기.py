@@ -70,4 +70,3 @@ for t in range(1, 11):
     postfix = get_postfix(cal_input)
     ans = get_calculation(postfix)
     print('#%d %d' % (t, ans))
-

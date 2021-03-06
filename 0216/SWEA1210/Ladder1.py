@@ -40,8 +40,3 @@ for t in range(1, 11):
         else:
             sr -= 1
     print('#%d %d' % (tc, sc))
-
-
-
-
-

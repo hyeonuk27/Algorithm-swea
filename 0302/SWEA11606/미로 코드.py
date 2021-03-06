@@ -22,7 +22,6 @@ def find_route(r, c):
         global ans
         ans = 1
         return
-
     # DFS 호출
     for d in range(4):
         nr = r + dr[d]

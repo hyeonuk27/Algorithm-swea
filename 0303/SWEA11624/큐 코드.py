@@ -33,6 +33,3 @@ b = deQueue(Q)
 c = deQueue(Q)
 
 print('#%d %s %s %s ' % (t, a, b, c))
-
-
-

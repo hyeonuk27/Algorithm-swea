@@ -17,6 +17,3 @@ for t in range(1, int(input())+1):
                 max_kill = kill
 
     print('#{} {}'.format(t, max_kill))
-
-
-
