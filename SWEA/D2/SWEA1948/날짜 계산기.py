@@ -2,8 +2,7 @@ import sys
 sys.stdin = open('input.txt')
 
 for tc in range(1, int(input())+1):
-    date = list(map(int, input().split())) # [2, 13, 6, 12]
-
+    date = list(map(int, input().split()))
     # 월 마지막 날짜
     last_date = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
@@ -19,18 +18,5 @@ for tc in range(1, int(input())+1):
         short_date += last_date[j]
     second_sum = short_date + date[1]
 
-
-    # [1] - [2] + 1
-
     ans = first_sum - second_sum + 1
-
     print('#{} {}'.format(tc, ans))
-
-
-
-
-
-
-
-
-

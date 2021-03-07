@@ -2,7 +2,6 @@ import sys
 sys.stdin = open('input.txt')
 
 N = int(input())
-
 # 1~N까지의 한정된 범위 내에서의 반복 -> for
 for n in range(1, N+1):
     num = n

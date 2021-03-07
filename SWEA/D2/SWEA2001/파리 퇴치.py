@@ -10,19 +10,14 @@ for t in range(1, int(input())+1):
         in_arr = list(map(int, input().split()))
         fly_arr += [in_arr]
 
-    # 죽은 파리 합의 최대값 변수 초기화
     max_kill = 0
     for i in range(N-M+1): # M-N+1개까지 열
         for j in range(N-M+1): # M-N+1개까지 행
-            # 죽은 파리 합 변수 초기화
             kill = 0
             for k in range(M): # M개까지 열
                 for l in range(M): # M개까지 행
-                    kill += fly_arr[i+k][j+l] # 행 -> 열, N-M+1 범위 내 이동
+                    kill += fly_arr[i+k][j+l]
             if max_kill < kill:
                 max_kill = kill
 
     print('#{} {}'.format(t, max_kill))
-
-
-
