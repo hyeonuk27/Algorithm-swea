@@ -1,7 +1,11 @@
 import sys
 sys.stdin = open('input.txt')
 
-for tc in range(1, int(input())+1):
+for t in range(1, int(input())+1):
     txt = input()
-    t = len(txt)
-    p = 0
+
+    for i in range(1, len(txt)):
+        if txt[0:i] == txt[0+i:0+i+i]:
+            ans = i
+            break
+    print('#%d %d' % (t, ans))
