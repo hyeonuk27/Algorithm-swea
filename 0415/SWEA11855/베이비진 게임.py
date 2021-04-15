@@ -1,6 +1,7 @@
 import sys
 sys.stdin = open('input.txt')
 
+# tc 1개 오류...
 def chk_baby_gin():
     for i in range(3, 7):
         A = sorted(A_arr[:i])
