@@ -16,7 +16,7 @@ for t in range(1, int(input())+1):
         if arr[i] == 3:
             triplet_num += 1
         elif arr[i] == 6:
-            triplet_num +=2
+            triplet_num += 2
 
     # run : 상자에 연속인 수가 담겨 있을 경우
     for i in range(len(arr)-2):
