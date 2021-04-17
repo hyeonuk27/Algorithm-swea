@@ -2,35 +2,34 @@ import sys
 sys.stdin = open('input.txt')
 
 
-def f(b, t):
-    b_int = 0
-    for x in b:
-        b_int = b_int * 2 + int(x)
-    binary = []
-    for i in range(len(b)):
-        binary.append(b_int ^ (1 << i))
+def B_to_D(B):
+    D = 0
+    for b in B:
+        D = D * 2 + int(b)
+    for i in range(len(B)):
+        BtoD.append(D ^ (1 << i))
 
-    for i in range(len(t)):
-        num1 = 0
-        num2 = 0
-        for j in range(len(t)):
+
+def check_T_in_D(T):
+    for i in range(len(T)):
+        num1 = num2 = 0
+        for j in range(len(T)):
             if i != j:
-                num1 = num1 * 3 + int(t[j])
-                num2 = num2 * 3 + int(t[j])
+                num1 = num1 * 3 + int(T[j])
+                num2 = num2 * 3 + int(T[j])
             else:
-                num1 = num1 * 3 + (int(t[j]) + 1) % 3  # 0->1 1->2 2->0
-                num2 = num2 * 3 + (int(t[j]) + 2) % 3  # 0->2 1-> 0 2->1
-        if num1 in binary:
+                num1 = num1 * 3 + (int(T[j]) + 1) % 3
+                num2 = num2 * 3 + (int(T[j]) + 2) % 3
+        if num1 in BtoD:
             return num1
-        if num2 in binary:
+        if num2 in BtoD:
             return num2
 
 
-T = int(input())
-
-for tc in range(1, T + 1):
-    b = input()
-    t = input()
-
-    r = f(b, t)
-    print('#%d %s' % (tc, r))
+for t in range(1, int(input())+1):
+    B = input()
+    T = input()
+    BtoD = []
+    B_to_D(B)
+    ans = check_T_in_D(T)
+    print('#%d %s' % (t, ans))
