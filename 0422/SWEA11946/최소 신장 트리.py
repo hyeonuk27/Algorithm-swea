@@ -11,10 +11,14 @@ def union(x, y):
 
 def kruskal():
     S = 0
+    cnt = 0
     for s, e, w in edges:
         if rep(s) != rep(e):
             union(s, e)
             S += w
+            cnt += 1
+            if cnt == E - 1:
+                break
     return S
 
 for t in range(1, int(input())+1):
